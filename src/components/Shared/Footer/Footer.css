@@ -1,0 +1,192 @@
+.black-bg {
+    background: #1e2128;
+}
+.pb-35 {
+    padding-bottom: 35px;
+}
+.footer-top-wrap {
+    position: relative;
+    z-index: 1;
+}
+.pt-85 {
+    padding-top: 85px;
+}
+
+.fw-title .title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+.fw-link ul li + li {
+    margin-top: 15px;
+}
+.fw-link ul li a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #b1b1b1;
+    display: inline-block;
+}
+.fw-link ul li a:hover {
+	color: #fd7a3a;
+	padding-left: 5px;
+}
+.copyright-wrap {
+    padding: 27px 0 12px;
+}
+.copyright-left-wrap {
+    margin-bottom: 15px;
+}
+.copyright-left-wrap .logo {
+    min-width: 135px;
+    margin-right: 40px;
+}
+.copyright-social {
+	flex-grow: 1;
+}
+.copyright-social ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.copyright-social ul li + li {
+    margin-left: 15px;
+}
+.copyright-social ul li a {
+    font-size: 17px;
+    color: #8c8c8c;
+    display: block;
+}
+.copyright-text {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.copyright-text p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #8c8c8c;
+}
+.copyright-text p a {
+	color: #8c8c8c;
+}
+.copyright-text p span {
+    display: inline-block;
+    margin: 0 15px;
+}
+.fw-title-two .title {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    padding-right: 25px;
+    position: relative;
+}
+
+.fw-post ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 26px;
+    border-bottom: 1px dashed #3c3742;
+    margin-bottom: 26px;
+}
+.fw-post ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+.fw-post-thumb {
+    width: 81px;
+    flex: 0 0 80px;
+    margin-right: 15px;
+}
+.fw-post-thumb img {
+    border-radius: 6px;
+}
+.fw-post-content h5 {
+    font-size: 14px;
+    color: #cdcdcd;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+.fw-post-content span {
+    display: block;
+    color: #90908f;
+    font-size: 12px;
+}
+.fw-post-content span i {
+    margin-right: 5px;
+}
+.fw-post-content h5 a:hover,
+.fw-post-content span i {
+    color: #0cb885;
+}
+.fw-social ul,
+.fw-solutions ul {
+    display: flex;
+    align-items: center;
+}
+.fw-social ul li + li {
+    margin-left: 10px;
+}
+.fw-social ul li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    background: #ddd;
+    border-radius: 2px;
+}
+.fw-social ul li a.fb {
+    background: #3b5998;
+}
+.fw-social ul li a.tw {
+    background: #55acee;
+}
+.fw-social ul li a.pin {
+    background: #d71e18;
+}
+.fw-social ul li a.lik {
+    background: #1565c0;
+}
+.fw-solutions ul li + li {
+    margin-left: 15px;
+}
+.copyright-wrap-two {
+    background: #302c35;
+    padding: 25px 0 15px;
+}
+.copyright-wrap-two .copyright-text {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.payment-method-img {
+    margin-bottom: 10px;
+    text-align: right;
+}
+.copyright-wrap-two .copyright-text p {
+    margin-bottom: 0;
+    text-transform: inherit;
+    color: #9c9c9c;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.copyright-wrap-two .copyright-text p span {
+    margin: 0;
+    color: #0cb885;
+}
+.footer-style-three .newsletter-form button,
+.footer-style-three .fw-title-two .title::after,
+.footer-style-three .fw-address .btn {
+    background: #fb7063;
+}
+.footer-style-three .newsletter-title h5 span,
+.footer-style-three .fw-link ul li a:hover,
+.footer-style-three .fw-post-content h5 a:hover,
+.footer-style-three .fw-post-content span i,
+.footer-style-three .copyright-text p span {
+    color: #fb7063;
+}

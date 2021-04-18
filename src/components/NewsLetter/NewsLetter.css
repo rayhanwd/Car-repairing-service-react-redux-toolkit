@@ -1,0 +1,9 @@
+
+.form-control:focus{
+    box-shadow: none !important;
+    border: 2px solid #f64f64 !important;
+}
+
+.k-h{
+    height: 115px !important;
+}
