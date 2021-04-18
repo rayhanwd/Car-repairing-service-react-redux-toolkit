@@ -10,3 +10,9 @@
 <h5>So, booth are most welcome to HourseVpn Service</h5>
 
 <h3>Our Live Site Link :https://hoursevpnservice.web.app</h3>
+
+<h6>Add Bonus Section</h6>
+<ul>
+<li>Protection All Devices</li>
+<li>Optional Contact Form</li>
+</ul>
