@@ -6,13 +6,13 @@ const ManageServices = () => {
   const id = Services.id;
   useEffect(() => {
 
-    fetch(`http://localhost:5200/services`)
+    fetch(`https://whispering-falls-52253.herokuapp.com/services`)
       .then(res => res.json())
       .then(GetManageData => setServices(GetManageData))
   }, [])
 
   const delProduct = (event, id) => {
-    fetch(`http://localhost:5200/delete/${id}`, {
+    fetch(`https://whispering-falls-52253.herokuapp.com/delete/${id}`, {
       method: 'DELETE',
     })
       .then(res => res.json())

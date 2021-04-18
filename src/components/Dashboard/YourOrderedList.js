@@ -12,14 +12,14 @@ const YourOrderedList = () => {
 
   
     useEffect(() => {
-        fetch('http://localhost:5200/orderedList/?email='+loggedUser.email)
+        fetch('https://whispering-falls-52253.herokuapp.com/orderedList/?email='+loggedUser.email)
             .then(res => res.json())
             .then(data => setOrderedList(data))
             
     }, [])
 
     useEffect(() => {
-        fetch('http://localhost:5200/statusList')
+        fetch('https://whispering-falls-52253.herokuapp.com/statusList')
             .then(res => res.json())
             .then(data =>setStatusList(data))
             

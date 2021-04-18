@@ -10,7 +10,7 @@ const SubmitOrder = () => {
     const [SelectedService, setSelectedService] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5200/services/${id}`)
+        fetch(`https://whispering-falls-52253.herokuapp.com/services/${id}`)
             .then(res => res.json())
             .then(data => setSelectedService(data))
     }, [id])
@@ -25,7 +25,7 @@ const SubmitOrder = () => {
             email:paymentInfo
         }
       console.log(paymentInfo);
-    const url = 'http://localhost:5200/TakeNewOrder';
+    const url = 'https://whispering-falls-52253.herokuapp.com/TakeNewOrder';
 
     fetch(url, {
         method: 'POST',

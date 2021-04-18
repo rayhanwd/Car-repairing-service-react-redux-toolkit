@@ -19,7 +19,7 @@ const Review = () => {
             feedback: inputData.feedback,
         }
 
-        const url = 'http://localhost:5200/AddReview';
+        const url = 'https://whispering-falls-52253.herokuapp.com/AddReview';
 
         fetch(url, {
             method: 'POST',

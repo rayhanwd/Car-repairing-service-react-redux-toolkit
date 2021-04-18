@@ -13,7 +13,7 @@ const MakeAdmin = () => {
           email: newEmail.emailId
       }
     
-  const url = 'http://localhost:5200/addNewAdmin';
+  const url = 'https://whispering-falls-52253.herokuapp.com/addNewAdmin';
 
   fetch(url, {
       method: 'POST',

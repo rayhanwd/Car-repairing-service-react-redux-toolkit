@@ -17,7 +17,7 @@ const Table = (props) => {
          
       }
       console.log(eventData);
-        const url = 'http://localhost:5200/AddStatus';
+        const url = 'https://whispering-falls-52253.herokuapp.com/AddStatus';
     
         fetch(url, {
             method: 'POST',

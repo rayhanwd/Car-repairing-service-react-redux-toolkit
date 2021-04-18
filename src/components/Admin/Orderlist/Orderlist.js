@@ -9,7 +9,7 @@ const OrderList = () => {
  
   useEffect(() => {
 
-    fetch('http://localhost:5200/ShowOrderList')
+    fetch('https://whispering-falls-52253.herokuapp.com/ShowOrderList')
       .then(res => res.json())
       .then(OrderData => SetOrders(OrderData))
   }, [])

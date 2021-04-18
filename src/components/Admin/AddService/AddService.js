@@ -17,7 +17,7 @@ const AddService = () => {
             savingAmount: inputData.savingAmount,
         }
       
-    const url = 'http://localhost:5200/AddService';
+    const url = 'https://whispering-falls-52253.herokuapp.com/AddService';
 
     fetch(url, {
         method: 'POST',
