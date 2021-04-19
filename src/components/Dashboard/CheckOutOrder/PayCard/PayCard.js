@@ -164,7 +164,7 @@ const PayCard = ({handlePayment}) => {
                 </fieldset>
                 {error && <ErrorMessage>{error.message}</ErrorMessage>}
                 <button class="custom-btn mt-3" processing={processing} error={error} disabled={!stripe}>
-                    Pay $25
+                    Pay
           </button>
             </form>
         );
