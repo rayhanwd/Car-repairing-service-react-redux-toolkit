@@ -1,4 +1,4 @@
-import React,{ useContext }  from 'react';
+import React, { useContext } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from '../../firebaseConfig/firebase.config';
@@ -10,7 +10,7 @@ const LogIn = () => {
     const location = useLocation();
     const history = useHistory();
     const [loggedUser, setLoggedUser] = useContext(UserContext);
-   
+
     const { from } = location.state || { from: { pathname: "/" } };
 
     if (firebase.apps.length === 0) {
@@ -21,11 +21,11 @@ const LogIn = () => {
         firebase.auth()
             .signInWithPopup(googleProvider)
             .then((result) => {
-                const { email, displayName,photoURL } = result.user;
-                const signInUser = { name: displayName, email,photo:photoURL};
+                const { email, displayName, photoURL } = result.user;
+                const signInUser = { name: displayName, email, photo: photoURL };
                 setLoggedUser(signInUser);
                 storeAuthToken();
-
+                history.replace(from);
             }).catch((error) => {
                 var errorCode = error.code;
                 var errorMessage = error.message;
@@ -53,7 +53,6 @@ const LogIn = () => {
         firebase.auth().currentUser.getIdToken(true).then(function (idToken) {
 
             sessionStorage.setItem('token', idToken);
-            history.replace(from);
         }).catch(function (error) {
 
         });

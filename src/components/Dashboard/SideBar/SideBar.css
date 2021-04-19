@@ -1,0 +1,12 @@
+.bg-custom{
+    background-color: #f64f64;
+}
+.Admin-link{
+    display: block;
+    margin: 27px 22px;
+    font-family: sans-serif;
+    letter-spacing:1px;
+}
+.Admin-link:hover{
+    text-decoration: none;
+}

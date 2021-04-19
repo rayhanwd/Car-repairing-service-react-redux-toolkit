@@ -11,8 +11,22 @@
 
 <h3>Our Live Site Link :https://hoursevpnservice.web.app</h3>
 
+<h6>Working All</h6>
+<ol>
+<li>Delete Service</li>
+<li>Make Admin</li>
+<li>Status</li>
+<li>Admin permission</li>
+<li>User permission</li>
+<li>and all others</li>
+
+</ol>
+
 <h6>Add Bonus Section</h6>
-<ul>
+<ol>
 <li>Protection All Devices</li>
+<li>Services Card Animation</li>
 <li>Optional Contact Form</li>
-</ul>
+</ol>
+
+<p>Note: please not reload when check my website.its a problem that have my website. Otherwise everything are oky. I cannot solved this problem. And Submit for 50 Marks.</p>

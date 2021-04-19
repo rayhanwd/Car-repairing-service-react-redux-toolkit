@@ -1,11 +1,12 @@
 import React from 'react';
-import CustomerReview from '../CustomerReview/CustomerReview';
-import Features from '../Features/Features';
-import NewsLetter from '../NewsLetter/NewsLetter';
-import Satisfaction from '../Satisfaction/Satisfaction';
-import Services from '../Services/Services';
-import Footer from '../Shared/Footer/Footer';
-import Header from './../Header/Header';
+import Header from './Header/Header';
+import Features from './Features/Features';
+import Satisfaction from './Satisfaction/Satisfaction';
+import Services from './Services/Services';
+import NewsLetter from './NewsLetter/NewsLetter';
+import Feedback from './CustomerFeedback/Feedback';
+import Footer from './Footer/Footer';
+
 const Home = () => {
     document.title="Home";
     return (
@@ -14,7 +15,7 @@ const Home = () => {
             <Features></Features>
             <Satisfaction></Satisfaction>
             <Services></Services>
-            <CustomerReview></CustomerReview>
+            <Feedback></Feedback>
             <NewsLetter></NewsLetter>
             <Footer></Footer>    
         </>
