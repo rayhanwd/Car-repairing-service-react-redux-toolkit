@@ -9,7 +9,7 @@ const AdminAddService = () => {
         setData(newData);
     }
     const handleSubmitted = () => {
-        const eventData = {
+        const FormData = {
             id: inputData.serviceId,
             planningType: inputData.planningType,
             price: inputData.vpnPrice,
@@ -24,7 +24,7 @@ const AdminAddService = () => {
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify(eventData)
+        body: JSON.stringify(FormData)
     })
         .then(res => res.json())
         .then(data => {

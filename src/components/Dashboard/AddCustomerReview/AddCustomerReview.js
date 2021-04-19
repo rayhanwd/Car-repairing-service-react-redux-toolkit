@@ -1,10 +1,9 @@
-import React,{ useState, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { UserContext } from '../../../App';
 import TopBar from './../TopBar/TopBar';
 import SideBar from './../SideBar/SideBar';
 const AddCustomerReview = () => {
-    const [loggedUser, setLoggedUser] =useContext(UserContext);
-    console.log(loggedUser.photo);
+    const [loggedUser, setLoggedUser] = useContext(UserContext);
     const [inputData, setData] = useState({});
     const handleBlur = (e) => {
         const newData = { ...inputData };
@@ -14,13 +13,12 @@ const AddCustomerReview = () => {
     const handleSubmitted = () => {
         const eventData = {
             username: inputData.name,
-            photo:loggedUser.photo,
+            photo: loggedUser.photo,
             companyRef: inputData.companyRef,
             feedback: inputData.feedback,
         }
 
-        const url = 'https://whispering-falls-52253.herokuapp.com/AddCustomerReview';
-
+        const url = 'https://whispering-falls-52253.herokuapp.com/AddReview';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -31,7 +29,7 @@ const AddCustomerReview = () => {
             .then(res => res.json())
             .then(data => {
                 if (data) {
-
+                    alert('review added successfully')
                 }
             })
     }
@@ -44,7 +42,7 @@ const AddCustomerReview = () => {
                     <div class="col-md-9 mx-auto">
                         <div class="card-body shadow-sm mt-5">
                             <h5 class="card-title">Write a Customer review</h5>
-                            <form className="m-5 p-5" onSubmit={handleSubmitted}>
+                            <form onSubmit={handleSubmitted}>
                                 <div class="mb-3 row">
                                     <label for="service id" class="col-sm-4 col-form-label">Your name</label>
                                     <div class="col-sm-10 col-md-7">
