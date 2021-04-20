@@ -14,7 +14,8 @@ const CheckOutOrder = () => {
             .then(data => setSelectedService(data))
     }, [id])
 
-    const handleSubmitted = (paymentInfo) => {
+    const handleSubmitted = (paymentInfo , e) => {
+        e.preventDefault()
         const eventData = {
             id: SelectedService.id,
             planningType: SelectedService.planningType,

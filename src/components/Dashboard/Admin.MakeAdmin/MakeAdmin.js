@@ -8,7 +8,8 @@ const AdminMakeAdmin = () => {
       newData[e.target.name] = e.target.value;
       setEmail(newData);
   }
-  const handleSubmitted = () => {
+  const handleSubmitted = (e) => {
+    e.preventDefault()
       const eventData = {
           email: newEmail.emailId
       }
@@ -25,7 +26,7 @@ const AdminMakeAdmin = () => {
       .then(res => res.json())
       .then(data => {
           if (data) {
-
+            alert('admin added successfully')
           }
       })
   }

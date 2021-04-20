@@ -10,7 +10,8 @@ const AddCustomerReview = () => {
         newData[e.target.name] = e.target.value;
         setData(newData);
     }
-    const handleSubmitted = () => {
+    const handleSubmitted = (e) => {
+        e.preventDefault()
         const eventData = {
             username: inputData.name,
             photo: loggedUser.photo,

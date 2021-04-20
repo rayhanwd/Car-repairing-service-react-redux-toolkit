@@ -8,7 +8,8 @@ const AdminAddService = () => {
         newData[e.target.name] = e.target.value;
         setData(newData);
     }
-    const handleSubmitted = () => {
+    const handleSubmitted = (e) => {
+        e.preventDefault()
         const FormData = {
             id: inputData.serviceId,
             planningType: inputData.planningType,
@@ -29,7 +30,7 @@ const AdminAddService = () => {
         .then(res => res.json())
         .then(data => {
             if (data) {
-
+                alert('New service added successfully')
             }
         })
     }
